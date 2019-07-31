@@ -2,7 +2,7 @@ __build_info:
   rime_version: 1.5.3
   timestamps:
     squirrel: 1561294610
-    squirrel.custom: 1564547491
+    squirrel.custom: 1564548574
 app_options:
   co.zeit.hyper:
     ascii_mode: true
@@ -274,5 +274,5 @@ preset_color_schemes:
     text_color: 0xccaa88
 show_notifications_when: appropriate
 style:
-  color_scheme: apathy
+  color_scheme: mojave_dark
 us_keyboard_layout: false
