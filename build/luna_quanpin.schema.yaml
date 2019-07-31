@@ -2,21 +2,36 @@ __build_info:
   rime_version: 1.5.3
   timestamps:
     default: 1561294610
-    default.custom: 1564548183
+    default.custom: 1564548170
     key_bindings: 1561294610
     key_bindings.custom: 0
+    luna_quanpin.custom: 0
+    luna_quanpin.schema: 1561294610
     punctuation: 1561294610
     punctuation.custom: 0
-ascii_composer:
-  good_old_caps_lock: true
-  switch_key:
-    Caps_Lock: clear
-    Control_L: noop
-    Control_R: noop
-    Eisu_toggle: clear
-    Shift_L: inline_ascii
-    Shift_R: commit_text
-config_version: 0.40
+engine:
+  filters:
+    - simplifier
+    - uniquifier
+  processors:
+    - ascii_composer
+    - recognizer
+    - key_binder
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - matcher
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - punct_translator
+    - reverse_lookup_translator
+    - script_translator
 key_binder:
   bindings:
     - {accept: "Control+p", send: Up, when: composing}
@@ -49,6 +64,7 @@ key_binder:
     - {accept: "Control+Shift+numbersign", toggle: full_shape, when: always}
     - {accept: "Control+Shift+dollar", toggle: simplification, when: always}
     - {accept: "Control+Shift+percent", toggle: extended_charset, when: always}
+  import_preset: default
 menu:
   page_size: 5
 punctuator:
@@ -119,27 +135,59 @@ punctuator:
     "|": ["·", "|", "｜", "§", "¦"]
     "}": ["』", "〗", "｝"]
     "~": ["~", "～"]
+  import_preset: default
 recognizer:
+  import_preset: default
   patterns:
     email: "^[A-Za-z][-_.0-9A-Za-z]*@.*$"
+    reverse_lookup: "`[a-z]*'?$"
     uppercase: "[A-Z][-_+.'0-9A-Za-z]*$"
     url: "^(www[.]|https?:|ftp[.:]|mailto:|file:).*$|^[a-z]+[.].+$"
-schema_list:
-  - schema: double_pinyin_flypy
-  - schema: luna_pinyin_simp
-switcher:
-  abbreviate_options: true
-  caption: "〔方案選單〕"
-  fold_options: true
-  hotkeys:
-    - "Control+grave"
-    - "Control+Shift+grave"
-  option_list_separator: "／"
-  save_options:
-    - full_shape
-    - ascii_punct
-    - simplification
-    - extended_charset
-    - zh_hant
-    - zh_hans
-    - zh_hant_tw
+reverse_lookup:
+  comment_format:
+    - "xform/([nl])v/$1ü/"
+  dictionary: stroke
+  enable_completion: true
+  preedit_format:
+    - "xlit/hspnz/一丨丿丶乙/"
+  prefix: "`"
+  suffix: "'"
+  tips: "〔筆畫〕"
+schema:
+  author:
+    - "佛振 <chen.sst@gmail.com>"
+  dependencies:
+    - stroke
+  description: |
+    所謂「全拼」。其實是去除聲調的漢語拼音。
+    詞典供形碼用作拼音反查。
+    
+  name: "全拼"
+  schema_id: luna_quanpin
+  version: 0.1
+speller:
+  algebra:
+    - "derive/^([nl])ve$/$1ue/"
+    - "derive/^([jqxy])u/$1v/"
+    - "derive/un$/uen/"
+    - "derive/ui$/uei/"
+    - "derive/iu$/iou/"
+  alphabet: zyxwvutsrqponmlkjihgfedcba
+  delimiter: " '"
+switches:
+  - name: ascii_mode
+    reset: 0
+    states: ["中文", "西文"]
+  - name: full_shape
+    states: ["半角", "全角"]
+  - name: simplification
+    states: ["漢字", "汉字"]
+  - name: ascii_punct
+    states: ["。，", "．，"]
+translator:
+  dictionary: luna_pinyin
+  preedit_format:
+    - "xform/([nl])v/$1ü/"
+    - "xform/([nl])ue/$1üe/"
+    - "xform/([jqxy])v/$1u/"
+  prism: luna_quanpin

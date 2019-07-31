@@ -25,9 +25,9 @@ patch:
     - single_char_filter
 
 ### 此处注释 emoji
-  # emoji_suggestion:
-  # opencc_config: emoji.json
-  # option_name: emoji_suggestion
+  emoji_suggestion:
+  opencc_config: emoji.json
+  option_name: emoji_suggestion
 
 
     # tips: all
@@ -62,13 +62,13 @@ patch:
       "$": ["¥", "$", "€", "£", "¢", "¤"]
       "<": ["<", "《", ",", "〈", "«"]
       ">": [">", "》", ".", "〉", "»"]
-  recognizer:
-    import_preset: default
-    patterns:
-      punct: "^/([a-z]+|[0-9]0?)$"
-      html: "^<[a-z]+>$"
-      code: "[a-zA-Z]+(*$"
-      url: "^(www[.]|https?:|ftp[.:]|mailto:|file:).*$|^[a-z]{1,10}[.:_-].*$"
+  # recognizer:
+  #   import_preset: default
+  #   patterns:
+  #     punct: "^/([a-z]+|[0-9]0?)$"
+  #     html: "^<[a-z]+>$"
+  #     code: "[a-zA-Z]+(*$"
+  #     url: "^(www[.]|https?:|ftp[.:]|mailto:|file:).*$|^[a-z]{1,10}[.:_-].*$"
 
   ### 精简 simp
   "translator/dictionary": pinyin_simp

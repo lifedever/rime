@@ -1,6 +1,6 @@
 patch:
   style:
-    color_scheme: mojave_dark
+    color_scheme: apathy
 
   preset_color_schemes:
     mojave_dark:
@@ -14,8 +14,8 @@ patch:
       border_height: 6
       border_width: 12
       border_color_width: 0
-      font_face: PingFangSC
-      font_point: 16
+      font_face: PingFangSC-Regular
+      font_point: 18
       label_font_point: 13
       text_color: 0xdedddd
       back_color: 0x3c3c3c
@@ -37,10 +37,10 @@ patch:
       comment_text_color: 0x999999
       corner_radius: 5
       font_face: "PingFangSC-Regular,HanaMinB"
-      font_point: 16
+      font_point: 18
       hilited_candidate_back_color: 0xFFF0E4
       hilited_candidate_text_color: 0xEE6E00
-      horizontal: false
+      horizontal: true
       inline_preedit: true
       label_font_face: "STHeitiSC-Light"
       label_font_point: 12
