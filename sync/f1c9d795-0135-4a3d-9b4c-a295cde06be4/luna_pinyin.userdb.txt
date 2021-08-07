@@ -2,5 +2,20 @@
 #@/db_name	luna_pinyin.userdb
 #@/db_type	userdb
 #@/rime_version	1.4.0
-#@/tick	0
+#@/tick	5
 #@/user_id	f1c9d795-0135-4a3d-9b4c-a295cde06be4
+bu 	不	c=0 d=0.1 t=1
+dan shi 	但是	c=0 d=0.1 t=2
+dan shi wo neng xie chu lai la 	但是我能寫出來啦	c=1 d=1 t=3
+dao li 	道理	c=0 d=0.1 t=1
+hui bu hui 	會不會	c=0 d=0.1 t=1
+la 	啦	c=0 d=0.1 t=2
+ni 	你	c=0 d=0.1 t=1
+ni ha o 	你哈哦	c=1 d=1 t=4
+ni hao a 	你好啊	c=2 d=1.9802 t=5
+wo 	我	c=0 d=0.1 t=1
+wo bu zhi dao ni hui bu hui zhe ge dao li 	我不知道你會不會這個道理	c=1 d=1 t=2
+wo neng 	我能	c=0 d=0.1 t=2
+xie chu lai 	寫出來	c=0 d=0.1 t=2
+zhe ge 	這個	c=0 d=0.1 t=1
+zhi dao 	知道	c=0 d=0.1 t=1
