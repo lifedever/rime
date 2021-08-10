@@ -75,4 +75,8 @@ Mac	mac
 Wi-Fi	wifi
 Apple ID	appleid
 QQ邮箱	qqyzxl
-葛晞研  gxy
+葛晞研	gxy
+QQ	qq
+微信	wx
+WeChat	wx
+悦隽央著 yrjryhvu
