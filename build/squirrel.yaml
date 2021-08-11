@@ -2,7 +2,7 @@ __build_info:
   rime_version: 1.7.3
   timestamps:
     squirrel: 1613228858
-    squirrel.custom: 1628313558
+    squirrel.custom: 1628654855
 app_options:
   com.agilebits.onepassword7:
     ascii_mode: true
@@ -189,6 +189,54 @@ preset_color_schemes:
     hilited_text_color: 0x7fffff
     name: "明月／Luna"
     text_color: 0xa5a5a5
+  macos_dark:
+    author: "一方<liuour@gmail.com>"
+    back_color: 0x252a2e
+    border_color: 0x050505
+    border_color_width: 0
+    border_height: 4
+    border_width: 4
+    candidate_format: "%c %@"
+    candidate_text_color: 0xe9e9ea
+    comment_text_color: 0x999999
+    corner_radius: 5
+    font_face: PingFangSC
+    font_point: 16
+    hilited_back_color: 0xD75A00
+    hilited_candidate_label_color: 0xFFFFFF
+    hilited_candidate_text_color: 0xFFFFFF
+    hilited_comment_text_color: 0x999999
+    hilited_corner_radius: 5
+    hilited_text_color: 0x999999
+    horizontal: true
+    inline_preedit: true
+    label_color: 0x999999
+    label_font_point: 13
+    text_color: 0x424242
+  macos_light:
+    author: "一方<liuour@gmail.com>"
+    back_color: 0xFFFFFF
+    border_color: 0xFFFFFF
+    border_color_width: 0
+    border_height: 4
+    border_width: 4
+    candidate_format: "%c %@"
+    candidate_text_color: 0x3c3c3c
+    comment_text_color: 0x999999
+    corner_radius: 5
+    font_face: PingFangSC
+    font_point: 17
+    hilited_back_color: 0xD75A00
+    hilited_candidate_label_color: 0xFFFFFF
+    hilited_candidate_text_color: 0xFFFFFF
+    hilited_comment_text_color: 0x999999
+    hilited_corner_radius: 5
+    hilited_text_color: 0x999999
+    horizontal: true
+    inline_preedit: true
+    label_color: 0x999999
+    label_font_point: 13
+    text_color: 0x424242
   mingcheng:
     corner_radius: 5
     font_face: "Sarasa Mono SC Light,PingFang SC Light"
@@ -248,17 +296,15 @@ preset_color_schemes:
     name: "沙漠夜／Mojave Dark"
     text_color: 0xdedddd
   psionics:
-    author: "雨過之後、佛振"
     back_color: 0x444444
     candidate_text_color: 0xeeeeee
     comment_text_color: 0x808080
     hilited_back_color: 0x444444
-    hilited_candidate_back_color: 0xd8bf00
+    hilited_candidate_back_color: 0xd4bc00
     hilited_candidate_label_color: 0xfafafa
     hilited_candidate_text_color: 0xfafafa
     hilited_comment_text_color: 0x444444
     hilited_text_color: 0xeeeeee
-    name: "幽能／Psionics"
     text_color: 0xc2c2c2
   purity_of_essence:
     author: "佛振"
@@ -282,8 +328,37 @@ preset_color_schemes:
     hilited_text_color: 0xeeeeee
     name: "純粹的形式／Purity of Form"
     text_color: 0xc2c2c2
+  solarized_dark:
+    back_color: 0xf0352A0A
+    border_color: 0xf02A1F00
+    candidate_text_color: 0x989F52
+    color_space: display_p3
+    comment_text_color: 0x289989
+    hilited_back_color: 0xf04C4022
+    hilited_candidate_back_color: 0xD7E8ED
+    hilited_candidate_label_color: 0x2566C6
+    hilited_candidate_text_color: 0x3942CB
+    hilited_comment_text_color: 0x8144C2
+    hilited_text_color: 0x2C8BAE
+    label_color: 0xCC8947
+    preedit_back_color: 0xf0403516
+    text_color: 0xA1A095
+  solarized_light:
+    back_color: 0xf0E5F6FB
+    border_color: 0xf0EDFFFF
+    candidate_text_color: 0x3942CB
+    color_space: display_p3
+    comment_text_color: 0x8144C2
+    hilited_back_color: 0xf0C9DADF
+    hilited_candidate_back_color: 0x403516
+    hilited_candidate_label_color: 0xCC8947
+    hilited_candidate_text_color: 0x989F52
+    hilited_comment_text_color: 0x289989
+    hilited_text_color: 0xBE706D
+    label_color: 0x2566C6
+    preedit_back_color: 0xf0D7E8ED
+    text_color: 0x756E5D
   solarized_rock:
-    author: "Aben <tntaben@gmail.com>, based on Ethan Schoonover's Solarized color scheme"
     back_color: 0x362b00
     border_color: 0x362b00
     candidate_text_color: 0x969483
@@ -292,7 +367,6 @@ preset_color_schemes:
     hilited_candidate_text_color: 0xffffff
     hilited_comment_text_color: 0x362b00
     hilited_text_color: 0x98a12a
-    name: "曬經石／Solarized Rock"
     text_color: 0x8236d3
   starcraft:
     author: "Contralisk <contralisk@gmail.com>, original artwork by Blizzard Entertainment"
@@ -307,8 +381,62 @@ preset_color_schemes:
     hilited_text_color: 0xfecb96
     name: "星際我爭霸／StarCraft"
     text_color: 0xccaa88
+  system_blue:
+    back_color: 0xFFFFFF
+    border_color: 0xFFFFFF
+    border_height: 4
+    border_width: 4
+    candidate_format: "%c %@  "
+    candidate_text_color: 0x000000
+    color_space: display_p3
+    comment_text_color: 0x999999
+    corner_radius: 6
+    font_face: PingFangSC
+    font_point: 16
+    hilited_back_color: 0xF8AA4D
+    hilited_candidate_label_color: 0xFFFFFF
+    hilited_candidate_text_color: 0xFFFFFF
+    hilited_comment_text_color: 0x999999
+    hilited_corner_radius: 4
+    hilited_text_color: 0x999999
+    horizontal: true
+    inline_preedit: true
+    label_color: 0x999999
+    label_font_face: "SFCompactText-Regular"
+    label_font_point: 14
+    text_color: 0x424242
+  win10:
+    back_color: 0xffffff
+    border_height: 6
+    border_width: 6
+    candidate_format: "%c %@  "
+    candidate_spacing: 24
+    candidate_text_color: 0x000000
+    comment_text_color: 0x888888
+    corner_radius: 0
+    font_point: 16
+    hilite_padding: 12
+    hilite_spacing: 8
+    hilited_back_color: 0xffffff
+    hilited_candidate_back_color: 0xcc8f29
+    hilited_candidate_text_color: 0xffffff
+    hilited_comment_text_color: 0xffffff
+    hilited_label_color: 0xffffff
+    hilited_text_color: 0x000000
+    horizontal: true
+    inline_preedit: true
+    label_color: 0x888888
+    label_font_point: 16
+    label_format: "%s"
+    margin_x: 12
+    margin_y: 12
+    min_height: 0
+    min_width: 160
+    round_corner: 0
+    spacing: 10
+    text_color: 0x000000
 show_notifications_via_notification_center: true
 show_notifications_when: appropriate
 style:
-  color_scheme: mojave_dark_lg
+  color_scheme: macos_light
 us_keyboard_layout: false
